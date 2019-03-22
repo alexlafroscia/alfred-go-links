@@ -8,7 +8,6 @@ url_to_open = ARGV[0]
 def get_profile_with_name(profile_hash, name)
   profile_hash.each do |key, profile|
     return key if profile['name'] == name
-    return nil
   end
 end
 
